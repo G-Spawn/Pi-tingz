@@ -1,9 +1,17 @@
+
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=$1
+
+
+
 network={
         scan_ssid=1
-        ssid="$1"
-        psk="$2"
+        ssid="$2"
+        psk="$3"
         proto=RSN
         key_mgmt=WPA-PSK
         pairwise=CCMP
         auth_alg=OPEN
 }
+#Change $1 $2 and $3 to your applicable 2 letter country code, your ssid, and your psk
