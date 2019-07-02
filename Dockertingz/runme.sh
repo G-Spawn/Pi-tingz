@@ -1,3 +1,4 @@
+ip=$1 #change $1 to your ip address of desired nextcloud interface network adapter
 docker run -d -p 5443:4443 -p 543:443 -p 69:80 -v ncdata:/data --name CONTAINER-Name-Changeme ownyourbits/nextcloudpi-armhf $IP
 
 # -p sets which ports, 5443 external / back to host, 4443 internal to container/image running for nextcloud. 69 external
