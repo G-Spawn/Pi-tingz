@@ -2,7 +2,7 @@ mkdir /home/pi/mountedfolder #just an example can be whatever.
 
 #Raspbian buster has included the cifs filesystem so you shouldn't need to install anything extra
 
-sudo mount.cifs //192.168.x.x/Deezmusic /home/pi/mountedfolder/ -o user=username,password=password
+sudo mount.cifs //192.168.x.x/music /home/pi/mountedfolder/ -o user=username,password=password
 
 # the username is that of the smb server / machine not the pi. Eg if sharing from windows a folder through smb/cifs
 # the username would be that of your windows user / that which you set through the sharing options - permissions (be it allowing
