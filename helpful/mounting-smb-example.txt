@@ -4,6 +4,7 @@ mkdir /home/pi/mountedfolder #just an example can be whatever.
 
 sudo mount.cifs //192.168.x.x/music /home/pi/mountedfolder/ -o user=username,password=password
 
+# the 'music' folder is just an example smb share name, opt to whatever applicable. Similarly with the local 'mountedfolder' 
 # the username is that of the smb server / machine not the pi. Eg if sharing from windows a folder through smb/cifs
 # the username would be that of your windows user / that which you set through the sharing options - permissions (be it allowing
 # only a specific user or 'everyone')
