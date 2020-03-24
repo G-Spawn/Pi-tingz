@@ -1,0 +1,21 @@
+#I got bored helping someone with vlc for a project so I figured I'd document some of the things I came across that worked.
+
+
+cvlc alsa://plughw:1,0 --sout='#transcode{vcodec=none,acodec=mp3,ab=256,channels=2,samplerate=44100,scodec=none}:http{mux=mp3,dst=:8080/}' --no-sout-all --sout-keep &
+
+# ^^^ Will stream a usb audio device (3.5 aux mic or whatever) through vlc to an ip stream to be listened either locally or remotely.
+# cvlc is the cmdline version of vlc. output will be to the terminal. if you want to background the task you can add & after the command
+# and it should get backgrounded allowing you to further do things in terminal if required. 
+
+eg: cvlc alsa://plughw:1,0 --sout='#transcode{vcodec=none,acodec=mp3,ab=256,channels=2,samplerate=44100,scodec=none}:http{mux=mp3,dst=:8080/} &
+# note the & difference from the last command to this one to hopefully background the task (if required)
+
+vlc http://localhost:8080 --fullscreen --audio-visual=visual --effect-list=spectrum
+
+# On the same device ^ Will call the GUI desktop version of vlc using the normal vlc command vs cvlc (command line vlc) and will 'listen' to the
+# usb mic being utilized through said stream. It will also pick the visualization effect 'spectrum' which can be changed to whichever else
+# granted you know the name of it
+# you can opt to running this off another machine / using vlc normally
+# eg on windows open vlc and click Media on the top left, and then open network stream. Instead of 'localhost' opting
+# to the applicable network IP address on the same lan (eg if windows is 192.168.0.20 and pi is 192.168.0.30 use 192.168.0.30 in
+# the vlc player http://192.168.0.30:8080 when in the page for vlc's open network stream.
