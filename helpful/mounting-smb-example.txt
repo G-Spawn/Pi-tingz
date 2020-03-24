@@ -1,0 +1,22 @@
+mkdir /home/pi/mountedfolder #just an example can be whatever. 
+
+#Raspbian buster has included the cifs filesystem so you shouldn't need to install anything extra
+
+sudo mount.cifs //192.168.x.x/Deezmusic /home/pi/mountedfolder/ -o user=username,password=password
+
+# the username is that of the smb server / machine not the pi. Eg if sharing from windows a folder through smb/cifs
+# the username would be that of your windows user / that which you set through the sharing options - permissions (be it allowing
+# only a specific user or 'everyone')
+
+#In some cases you need to specify the smb version
+#SMB protocol version. Allowed values are:
+#
+#    1.0 – The classic CIFS/SMBv1 protocol. This is the default.
+#    2.0 – The SMBv2.002 protocol. This was initially introduced in Windows Vista Service Pack 1, and Windows Server 2008. Note that the initial release version of Windows Vista spoke a slightly different dialect
+#    (2.000) that is not supported.
+#    2.1 – The SMBv2.1 protocol that was introduced in Microsoft Windows 7 and Windows Server 2008R2.
+#    3.0 – The SMBv3.0 protocol that was introduced in Microsoft Windows 8 and Windows Server 2012.
+
+so eg sudo mount.cifs //192.168.x.x/Deezmusic /home/pi/mountedfolder/ -o vers=1.0,user=username,password=password
+
+please dont forget to comma seperate the vers=x.x from the further parameters / things required/ (vers=1.0,user=blabla)
