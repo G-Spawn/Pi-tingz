@@ -7,8 +7,7 @@ https://github.com/fireeye/commando-vm
 # Windows pentest vm stuff
 
 https://github.com/markondej/fm_transmitter.git
-# fm transmitter on raspberry pi. Idk why but if for some reason that link above adds a '10' to the end of the url just remove it
-# eg if its makes it https://github.com/markondej/fm_transmitter.git10 for some reason remove the 10
+# fm transmitter on raspberry pi. 
 
 https://github.com/nvbn/thefuck
 # Fun cmdline thing in case you mess up your command(s) you ran. can use this to help you figure out the proper syntax of the command
@@ -17,12 +16,19 @@ https://github.com/silverwind/droppy
 # Simple little fileserver webui
 
 https://gist.github.com/etes/aa76a6e9c80579872e5f
-# Again idk why but for me its putting '20' after this link now please remove such if it persists. Something weird with github
-# links within a github XD
+
 
 https://github.com/ogra1/mjpg-streamer
 # as the name entails its an mjpg streamer
+
 https://github.com/pi-hole/docker-pi-hole
+#pihole on docker
 https://github.com/MichMich/MagicMirror
+# Magic mirror on pi / whatever. You do not need to make the 'mirror' portion if you cannot. You can just use it as 
+# a networked information hud its really nice.
+
 https://github.com/AlessandroZ/LaZagne
+# a utility to help recover passwords on an array of compatible systems
+
 https://github.com/sqshq/sampler
+# a pretty visulaization utility for cmdline line commands
