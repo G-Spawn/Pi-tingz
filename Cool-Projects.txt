@@ -1,0 +1,28 @@
+#Just Some links to some cool projects
+
+https://github.com/billz/raspap-webgui
+# simple raspberry pi hotspot with a beautiful router like webui to further configure things from
+
+https://github.com/fireeye/commando-vm
+# Windows pentest vm stuff
+
+https://github.com/markondej/fm_transmitter.git
+# fm transmitter on raspberry pi. Idk why but if for some reason that link above adds a '10' to the end of the url just remove it
+# eg if its makes it https://github.com/markondej/fm_transmitter.git10 for some reason remove the 10
+
+https://github.com/nvbn/thefuck
+# Fun cmdline thing in case you mess up your command(s) you ran. can use this to help you figure out the proper syntax of the command
+
+https://github.com/silverwind/droppy
+# Simple little fileserver webui
+
+https://gist.github.com/etes/aa76a6e9c80579872e5f
+# Again idk why but for me its putting '20' after this link now please remove such if it persists. Something weird with github
+# links within a github XD
+
+https://github.com/ogra1/mjpg-streamer
+# as the name entails its an mjpg streamer
+https://github.com/pi-hole/docker-pi-hole
+https://github.com/MichMich/MagicMirror
+https://github.com/AlessandroZ/LaZagne
+https://github.com/sqshq/sampler
